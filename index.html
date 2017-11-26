@@ -1,4 +1,12 @@
 <html>
+
+<!-- Start: injected by Adguard -->
+<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=63647302866603" type="text/javascript"></script>
+<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Popup Blocker?ts=63647302866603" type="text/javascript"></script>
+<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Web of Trust?ts=63647302866603" type="text/javascript"></script>
+<script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=63647302729630&amp;domain=nikitagvozdkov.github.io&amp;css=1&amp;js=1&amp;generic=1&amp;stealth=1&amp;ref=0" type="text/javascript"></script>
+
+<!-- End: injected by Adguard -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 <body bgcolor = white text = "black">
@@ -9,32 +17,49 @@
  <title>Почти как "Головные мюсли"</title>
   <style>
    body {
+   margin: 0;
     background: #666666 url(http://anywalls.com/images/201210/anywalls.com_17756.jpg);
     color: #fff;
    }
+    #sidebar, #content { position: absolute; } 
+   #sidebar, #content { overflow: auto; padding: 5px; } 
+   #header {
+    height: 200px; /* Высота слоя */}
+   #header h1 { padding: 5px; margin: 0; }
+    #sidebar { 
+    width: 250px;
+    top: 230px; /* Расстояние от верхнего края */ 
+    bottom: 0; /* Расстояние снизу  */
+   }
+   
+   #content {
+    top: 150px; /* Расстояние от верхнего края */
+    left: 260px; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
   </style>
-  
-<h1>Сюда наверное я буду что-то писать, ведь мало мне Vk и Instagram, чтобы выговариваться...</h1> <br>
-<h3>Но первоочередная моя задача - это изучение html. И чем больше я познаю, тем больше всего тут будет. </h3>
-<br>
-	<br>
-    		<br>
+  <div id="header">
+<h1>Сюда наверное я буду что-то писать, ведь мало мне Vk и Instagram, чтобы выговариваться...</h1> 
+<h3>Но первоочередная моя задача - это изучение html. И чем больше я познаю, тем больше всего тут будет. </h3></div>	
 <nav class="toc">
-  <h3>Быстрый переход на темы:</h3>
+  <h6>Быстрый переход на темы:</h6>
+  <div id="sidebar">
   <no>
-    <li><a href="#iphone" style="color:##00FF00;"><h2>Фото iPhone X</h2></a>  
-    	<li><a href="#9class" style="color:##00FF00;"><h2>Бал для 9-х классов</h2></a>
-    		<li><a href="#gang" style="color:##00FF00;"><h2>Школьная банда</h2></a>
-      			<li><a href="#notes1" style="color:##00FF00;"><h2>Собственное приложение для заметок</h2></a>
-       				<li><a href="#newlive" style="color:##00FF00;"><h2>Новый триместр</h2></a>
-	 <li><a href="#video" style="color:##00FF00;"><h2>Про вторую версию заметок</h2></a>
-		 <li><a href="#film" style="color:##00FF00;"><h2>Сходил на последнего богатыря.</h2></a>
+    <li><a href="#iphone" style="color:##00FF00;"><h4>Фото iPhone X</h4></a>  
+    	<li><a href="#9class" style="color:##00FF00;"><h4>Бал для 9-х классов</h2></a>
+    		<li><a href="#gang" style="color:##00FF00;"><h4>Школьная банда</h4></a>
+      			<li><a href="#notes1" style="color:##00FF00;"><h4>Собственное приложение для заметок</h4></a>
+       				<li><a href="#newlive" style="color:##00FF00;"><h4>Новый триместр</h4></a>
+	 <li><a href="#video" style="color:##00FF00;"><h4>Про вторую версию заметок</h4></a>
+		 <li><a href="#film" style="color:##00FF00;"><h4>Сходил на последнего богатыря.</h4></a>
   </no>
+  </div>
 </nav> 
 
 <br>
 <br>
 <br>
+<div id="content">
 <!--<a href="http://novgod.biz "style="color:#00000FF;">Дед Мороз тут</a> -->
 <h2 id="iphone">Смотрите, какая прикольная десяточка.</h2>
 <p> Когда в сеть сливали фото нового iPhone, он выглядел стремно. А как вышел - все взяли свои слова назад. Уже не первый год такая магия Apple работает. </p>
@@ -95,4 +120,6 @@
 		  <br>
 		  <br>
 	  <br>
- </body>
+      
+      </div>
+ </body
