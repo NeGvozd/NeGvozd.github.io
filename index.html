@@ -17,16 +17,21 @@
    #bar, #content { overflow: auto; padding: 250;} 
 	  .content{padding: 20px;}
 	  #end{
-      
-      padding:0;
-      bottom:0;
+     
+    left: 0; bottom: 0; /* Левый нижний угол */
+    height: 10%;
+    margin: 0;
+    padding: 10px; /* Поля вокруг текста */
+   
+    color: #000000; /* Цвет текста */
+    
       }
      
    #header {
 	   color: #FFFFFF;
    position: fixed;
    background: #4682B4; 
-   width: 100%;  
+   width: 100%;  left:0;
     height: 40; /* Высота слоя */}
    #header h1 { padding: 0; margin: 0; }
    .layer {
@@ -67,7 +72,7 @@
 		       </div>
 	       </div>
            <div id="end">
-	       <p>Проект Никиты Гвоздкова</p>
+	       <a href="links" style="text-decoration: none; color:#0000CD" class=".title"><h4>Проект Никиты Гвоздкова</h4></a> 
            </div>
 	</body>
     
