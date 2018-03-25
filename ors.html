@@ -17,8 +17,8 @@
    
    #bar, #content { overflow: auto; padding: 250;} 
 	  .content{padding: 6vw;}
-	  #end{
-		  position: middle;
+	  .end{
+		 
       opacity: 0.8;
    text-align: center;
      width: 100%;
@@ -51,22 +51,43 @@
    .layer {
    text-align: center;
    
-    background: #e1e1e1; /* Цвет фона */
+    background: #f2f2f2; /* Цвет фона */
     border: 2px solid #708090	;  /* Параметры рамки */
     padding: 20px; /* Поля вокруг текста */
    } 
+   
+   
+   .layer2 {
+   font-size: 2.3vw;
+   text-align:center;
+   height:30vw;
+   width:37vw;
+	  position: absolute; /* Абсолютное позиционирование */    
+    left:  4vw; /* Положение от правого края */
+    background: #f2f2f2; /* Цвет фона */
+    border: 3px solid #708090;  /* Параметры рамки */
+    padding: 20px; /* Поля вокруг текста */
+   } 
+   
+   .layer3 {
+   font-size: 2.3vw;
+   text-align:center;
+   height:30vw;
+   width:37vw;
+	  position: absolute; /* Абсолютное позиционирование */    
+    right:  4vw; /* Положение от правого края */
+    background: #f2f2f2; /* Цвет фона */
+    border: 3px solid #708090;  /* Параметры рамки */
+    padding: 20px; /* Поля вокруг текста */
+   } 
+   
 	  a:visited{color:0000FF;}
-	  a {font-family: verdana;
-		  
-	  }
-      p {font-family: verdana;
-      font-size: 20;   color:#282828;   
-      }
+	  a {font-family: verdana;}
+      p {font-family: verdana;}
 	  h1 {font-family: verdana;}
-	  h3 {font-family: helvetica;
-       font-size: 3vw; color:000000;
-       }
-	  h4 {font-family: helvetica;}
+      h2 {font-family: verdana;}
+	  h3 {font-family: verdana;}
+	  h4 {font-family: verdana;}
 	  h5 {font-family: verdana;}
       
      
@@ -99,71 +120,50 @@
 
 </div>
 <body>
-
-
 <!--<div id="bar">
 <nav><a href="feed"><font size="5">О проекте</font></a> <font size="5">|</font> 
 	<a href="news" style="text-decoration: none"><font size="5">Новости</font></a> <font size="5">|</font>
 	<a href="links" style="text-decoration: none"><font size="5">Контакты</font></a> </nav>
-       </div>-->
+       </div>-->      
        
-       
-	       <div class="content">		       
+	       <div class="content">
+		       <div id="feed"><h1>О проекте</h1>
 		       <div class="layer">
 			       
-       <h3>Пока никто не видит.</h3>
+       <h3>Это тестовый сайт для пробежки по возможностям html.</h3>
 		       <p>
-               Все, буду в этом разделе все внедрения тестить.
+			       Что это вообще такое? Ничего особенного. Сайт на чистом html. 
+Но раз я написал сайт, то его нужно для чего-то использовать. Поэтому я решил записывать сюда новости/отчеты о "проектной" деятельности. 
+Изменения в дизайне сайта, приложения на C# , роботы. 
 			       </p>
-
+<p> Редко, но все-таки тут могут появляться мои мысли по какому-либо поводу, сайт то мой) 
+		       </p>
+			   </div>
+			      
 		       </div>
-<br> <br>
+              
+                    <div id="last" style="text-align:center;"><h1>Последнее</h1>           
+               <div class="layer2">
+               <a href="https://negvozd.github.io/news#conference" style="text-decoration: none; color:#000000;"><h3>Городская научно-практическая конференция.</h3><p>28-го февраля со своим текстовым редактором я стал призером 12-й ежегодной местной конференции в секции... </p></a> 
+               </div>
 
-		       <div class="layer">
-			       <h3>Aд перфекциониста.<i>X2</i></h3>
-<p>(Внешний вид блоков)</p>
+<div class="layer3">
+ <a href="https://negvozd.github.io/news#NoteBook2.1" style="text-decoration: none; color:#000000;"><h3>Обновление блокнота.</h3><p>В самом начале ноября я написал первые заметки. Потом, в течении ноября, я начал осваивать html и в 20-х числах все того-же ноября у меня был...</p>
  
- <a href="http://instagram.com/orbitsonya"><img src="https://pp.userapi.com/c844216/v844216098/295c/YI5ZWHTC6yA.jpg" width="65%" ></a>
-
-
 </div>
-		      
-	       <br>
-	<br>
-		       
-		       
-<div class="layer">
-<h3>Aд перфекциониста.</h3>
-<p>(Тест: Размер окна привязан к разрещению. Фото с ссылками)</p>
- <a href="https://instagram.com/p/BgG2mr8B1UU/"><img src="https://pp.userapi.com/c834201/v834201466/e3ae5/EXQZ8AElftc.jpg" width="45%" ></a>
- <a href="https://instagram.com/p/BgG2mr8B1UU/"><img src="https://pp.userapi.com/c824409/v824409466/e26f9/c7HfCBp6Aaw.jpg" width="45%" ></a>
 
+ 
+		       </div>
+               
 
-</div>
-		      
-	       <br>
+	       </div>
+	
 	<br>
+    <br>
+    <br>
+          
 	
-	<div class="layer">
-		<h3>Продолжаем эксперименты</h3>
-		<p>
-			(Тест: переоформил нижний док)
-		</p>
-		</div>
-		       <br>
-		       <br>
-		       <div class="layer">
-			 <h3>
-			Адаптация доков под размеры экрана  	 
-			       </h3>
-		       </div>
-		       </div>
-	
-	
-        <!--   <div id="end">
-	      <p> <a href="links" style="text-decoration: none; color:#FFFFFF" class=".title"><font size="6vw">Проект Никиты Гвоздкова</font></a> </p>
-           </div> -->
-	
-</body
+</body>
+
 
 
