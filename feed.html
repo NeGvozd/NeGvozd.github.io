@@ -105,6 +105,17 @@
  else if(screen.width >= '1280'){} 
   </script>
 	
+	<script type="text/javascript"> 
+var speed=50; 
+if(document.all||document.getElementById){var storetext=document.getElementById?document.getElementById("rainbowText"):document.all.rainbowText;} 
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0"),r=1,g=1,b=1,seq=1; 
+function changetext(){rainbow="#"+hex[r]+hex[g]+hex[b];storetext.style.color=rainbow;} 
+function change(){if(seq==6){b--;if(b==0)seq=1}if(seq==5){r++;if(r==12)seq=6}if(seq==4){g--;if(g==0)seq=5}if(seq==3){b++;if(b==12)seq=4}if(seq==2){r--;if(r==0)seq=3}if(seq==1){g++;if(g==12)seq=2}changetext()}
+function starteffect(){if(document.all||document.getElementById){flash=setInterval("change()",speed)}} 
+starteffect(); 
+</script>
+	
+	
 	<link rel="shortcut icon" href="https://cdn1.savepice.ru/uploads/2018/1/14/522338f65c086723457bc1129794ce25-full.png" type="image/png">
   </head>
   <div id="header">
@@ -114,7 +125,7 @@
 <a><font size="6vw"><span style="vertical-align: 11; color:#e1e1e1"><b>Почти как "Головные мюсли"</b></span></font></a>
  
  </nav>
-	  
+	<h1 id="rainbowText">Блок с текстом для примера</h1>  
 <!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
 
 </div>	
