@@ -10,8 +10,7 @@
  <title>Почти как "Головные мюсли"</title>
   <style>
 	@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400');
-	
-#rainbowText{text-align:center;font:48px/1.3 Georgia,serif;} 
+	  
    body {
    margin: 0;
     background: #f0f0f0;
@@ -20,7 +19,7 @@
    <head>
    
    #bar, #content { overflow: auto; padding: 250;} 
-	   .content{padding-top: 30; padding-bottom: 6vw;
+	   .content{padding-top: 30; padding-bottom: 10vw;
 	  padding-left:2vw; padding-right: 2vw; 
 	  }
 	  .end{
@@ -52,6 +51,7 @@
    width: 100%;  left:0;
     height: 47; /* Высота слоя */}
    #header h1 { padding: 0; margin: 0; }
+   
    .layer {
    text-align: center;   
     background: #FFFFFF; /* Цвет фона */
@@ -65,31 +65,40 @@
    
    .layer2 {
    text-align: center;
-   float:left;
-   width:35vw;   
+   float:left;      
     background: #FFFFFF; /* Цвет фона */
     box-shadow: 0 0 5px;
      padding-top: 10px;
 	 padding-bottom: 20px;
     padding-left: 60px; 
 	padding-right: 60px;
-	height: 115;
+	width: 38vw;
    } 
    
    .layer3 {
    text-align: center;
-   float:right;
-   width:35vw;   
+   float:right;    
     background: #FFFFFF; /* Цвет фона */
     box-shadow: 0 0 5px;
     padding-top: 10px;
 	 padding-bottom: 20px;
     padding-left: 60px; 
-	padding-right: 60px;
-	height: 115;
+	padding-right: 60px;	
+	width:38vw;
    } 
    
-	  a:visited{color:0000FF;}
+   .footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  top:100%;
+  width: 100%;
+  height: 80px;
+  
+}
+   a:link{color:#0000CD;}
+	  a:visited{color:#191970;}
+	 
 	  a {font-family: verdana;}
       p {font-family: verdana;}
 	  h1 {font-family: verdana;}
@@ -106,17 +115,6 @@
  else if(screen.width >= '1280'){} 
   </script>
 	
-	
-	  <script language="JavaScript"> 
-var speed=50; 
-if(document.all||document.getElementById){var storetext=document.getElementById?document.getElementById("rainbowText"):document.all.rainbowText;} 
-var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0"),r=1,g=1,b=1,seq=1; 
-function changetext(){rainbow="#"+hex[r]+hex[g]+hex[b];storetext.style.color=rainbow;} 
-function change(){if(seq==6){b--;if(b==0)seq=1}if(seq==5){r++;if(r==12)seq=6}if(seq==4){g--;if(g==0)seq=5}if(seq==3){b++;if(b==12)seq=4}if(seq==2){r--;if(r==0)seq=3}if(seq==1){g++;if(g==12)seq=2}changetext()}
-function starteffect(){if(document.all||document.getElementById){flash=setInterval("change()",speed)}} 
-starteffect(); 
-	  </script> 
-	
 	<link rel="shortcut icon" href="https://cdn1.savepice.ru/uploads/2018/1/14/522338f65c086723457bc1129794ce25-full.png" type="image/png">
   </head>
   <div id="header">
@@ -126,7 +124,7 @@ starteffect();
 <a><font size="6vw"><span style="vertical-align: 11; color:#e1e1e1"><b>Почти как "Головные мюсли"</b></span></font></a>
  
  </nav>
-	
+	  
 <!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
 
 </div>	
@@ -157,33 +155,46 @@ starteffect();
 			       </p>
 			   </div>
 			      
-		       </div>
-              
-                    <div id="last" style="text-align:center;"><h1>Последнее</h1>           
+		       
+              <br>
+                   
                <div class="layer2">
-               <a href="https://negvozd.github.io/news#pasc4" style="text-decoration: none; color:#191970; "><h3> Продолжение продолжения 2 </h3><p>Переделанный интерфейс и добавлены четности/нечетности...</p></a> 
+               <a href="https://negvozd.github.io/news#pasc4" style="text-decoration: none; font-size:19;"><h3> Продолжение продолжения 2 </h3><p>Переделанный интерфейс и добавлены четности/нечетности...</p></a> 
                </div>
 
 <div class="layer3">
- <a href="https://negvozd.github.io/news#translater" style="text-decoration: none; color:#191970;"><h3>Приложение из пакета (2)</h3><p> Вот и второе приложение, относящееся к пакету "обучающих" приложений.</p>
+ <a href="https://negvozd.github.io/news#translater" style="text-decoration: none;font-size:19; "><h3>Приложение из пакета (2)</h3><p> Вот и второе приложение, относящееся к пакету "обучающих" приложений.</p>
 	</a>
 </div>
+ <br>
+    <br>
+	<br>
+	<br>
+	 <br>
+    <br>
+	<br>
+	<br>
+	 <br>
+	 <br>
+	
+    
 
- 
-		       </div>
-               
+		<div class ="layer" style="top:20px;">
+<a href="https://negvozd.github.io/news#translater" style="text-decoration: none; font-size:19;"><h3>Добрался до сайта</h3><p> Теперь новые и посещённые заголовки из новостей разного цвета...</p>
+	</a>
+		</div>
+		   </div> 
+             
 
-	       </div>
+   <div class="footer">
+	<p style=" text-align: center; font-family: 'Fira Sans Extra Condensed', sans-serif; font-size: 20px;">Никита Гвоздков</p>
+		 </div>
+        
+
+	</div>
 	
 	<br>
-    <br>
-    <br>
-          
-	
 </body>
 
-	<br>
-    <br>
- <br>
-
-<p id="rainbowText" style=" text-align: center; font-family: 'Fira Sans Extra Condensed', sans-serif; font-size: 20px">Никита Гвоздков</p>
+	
+	       
