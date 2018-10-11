@@ -18,7 +18,7 @@
    <head>
    
    #bar, #content { overflow: auto; padding: 250;} 
-	  .content{padding-top: 6vw; padding-bottom: 6vw;
+	  .content{padding-top: 2vw; padding-bottom: 6vw;
 	  padding-left:2vw; padding-right: 2vw; 
 	  }
 	  .end{
@@ -34,15 +34,16 @@
     /* Цвет текста */    
       }
      
-   #header {
+   .header {
    text-align: center;
    opacity: 0.95;
 	   color: #000000;
 	border-bottom: 1px solid #DCDCDC;	  
-   position: fixed;
+   position: sticky;
+  top: 0;
    background: #FFFFFF; 
    width: 100%;  left:0;
-    height: 45; /* Высота слоя */}
+    height: 50; /* Высота слоя */}
     
     #header2 {
    text-align: center;
@@ -102,28 +103,29 @@
      
   </style>
 	
-	<script language="JavaScript">
+	<!--<script language="JavaScript">
  if(screen.width <= '640'){location.href="marchive";}
  else if(screen.width >= '1280'){} 
-  </script>
+  </script> -->
 	
 	<link rel="shortcut icon" href="https://cdn1.savepice.ru/uploads/2018/1/14/522338f65c086723457bc1129794ce25-full.png" type="image/png">
   </head>
-  <div id="header">
+  <div style="background-color:#000000; text-align:center; padding-top:15; padding-bottom:20;">
+  <a href="feed" style="background:none; font-size:50; color:ffffff; position:center; text-decoration: none;"> <b>Почти как "Головные мюсли"</b> </a> 
+  </div>
+  <div class="header">
  
 <nav>
-<a href="feed" style="float:left; padding-left: 50;"><img src="https://cdn1.savepice.ru/uploads/2018/1/14/522338f65c086723457bc1129794ce25-full.png" width="42" height="44" ></a> 
- 
-<!--<a><font size="6vw"><span style="vertical-align: 11; color:#1e1e1e">Почти как "Головные мюсли"</span></font></a> -->
 
-<font size="6"><span style=" color: #A9A9A9; float: left; padding-top:1; margin-left: 15;">|</span></font>
-
-<a href="archive" style="text-decoration: none; color:#323232; font-size:24; float: left; margin-left:15; padding-top:6; " ><b>Архив проектов</b></a> 
+<a href="news" style=" font-size:36; text-decoration:none; color:#323232;"><span>Новости</span></a> 
  
+ <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
  
- <a href="links" style="text-decoration: none; color:#323232; font-size:20; float: right; padding-right: 50; padding-top: 10 " >Контакты</a> 
+	<a href="links" style="font-size:36; text-decoration:none; color:#323232;"><span">Контакты</span></a>
+    
+ <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
  
-  <a href="news" style="text-decoration: none; color:#323232; font-size:20; float: right; padding-top: 10; margin-right: 30; " >Новости</a> 
+<a href="archive" style=" font-size:36; text-decoration:none; color:#909090;"><span>Архив проектов</span></a> 
 
  
  </nav>
