@@ -17,7 +17,7 @@
    <head>
   
    #bar, #content { overflow: auto; padding: 250;} 
-	  .content{padding-top: 3vw; padding-bottom: 6vw;
+	  .content{padding-top: 2vw; padding-bottom: 6vw;
 	  padding-left:2vw; padding-right: 2vw; 
 	  }
 	  .end{
@@ -33,15 +33,18 @@
     /* Цвет текста */    
       }
      
-    #header {
+   .header {
    text-align: center;
    opacity: 0.95;
 	   color: #000000;
-	border-bottom: 1px solid #505050;	  
-   position: fixed;
-   background: #2d2d2d; 
+	border-bottom: 1px solid #808080;	  
+   position: sticky;
+   position: -webkit-sticky;
+  top: 0;
+   background: #565656; 
    width: 100%;  left:0;
-    height: 45; /* Высота слоя */}
+    height: 50; /* Высота слоя */
+	}
     
     #header2 {
    text-align: center;
@@ -123,23 +126,29 @@
 	
 	<link rel="shortcut icon" href="https://cdn1.savepice.ru/uploads/2018/1/14/522338f65c086723457bc1129794ce25-full.png" type="image/png">
   </head>
-  <a href="feed" style="background:none"> <h1  style="font-size:50; color:ffffff; text-align:center;">Почти как "Головные мюсли"</h1> </a>
- 		     
-		       <div class="layer" style="border-radius:0; background-color:#e6e6e6; box-shadow: 0 0 5px;">	
-		      <a href="news" style=" font-size:36;  /* Цвет ссылки при наведении на нее курсора мыши */  
-    border: 1px solid  #000000;
-	border-radius:5px;
-	padding-left:14px;
-	padding-right:14px;"><span>Новости</span></font></a> 
+  <div style="background-color:#000000; text-align:center; padding-top:15; padding-bottom:20;">
+  <a href="feed" style="background:none; font-size:50; color:ffffff; position:center; text-decoration: none;"> <b>Почти как "Головные мюсли"</b> </a> 
+  </div>
+  <div class="header">
+ 
+<nav>
+
+<a href="news" style=" font-size:36; text-decoration:none; color:#dcdcdc;"><span>Новости</span></a> 
  
  <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
  
-	<a href="links" style=" font-size:36;"><span">Контакты</span></font></a>
+	<a href="links" style="font-size:36; text-decoration:none; color:#ffffff;"><span">Контакты</span></a>
     
  <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
  
-<a href="archive" style=" font-size:36"><span>Архив проектов</span></font></a>
-			   </div>		
+<a href="archive" style=" font-size:36; text-decoration:none; color:#ffffff;"><span>Архив проектов</span></a> 
+
+ 
+ </nav>
+	  
+<!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
+
+</div>		
   
 
 <body>
