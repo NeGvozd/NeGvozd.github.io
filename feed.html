@@ -123,20 +123,42 @@
 	  h3 {font-family: verdana;}
 	  h4 {font-family: verdana;}
 	  h5 {font-family: verdana;}
-      
+          .rainbow-animated {
+      background: linear-gradient(to right, red, orange , yellow, rgb(0, 187, 0), cyan, blue, violet);
+      background-size: 700% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: rainbow 90s infinite alternate;
+      animation: rainbow 10s infinite alternate;
+      font-size: 50px;
+      line-height: 10px;
+    }
      
-  </style>
-	
-	<!--<script language="JavaScript">
- if(screen.width <= '640'){location.href="mfeed";}
- else if(screen.width >= '1280'){} 
-  </script> -->
-	
-	<link rel="shortcut icon" href="source/icon.png" type="image/png">
-  </head>
-  <div style="background-color:#000000; text-align:center; padding-top:15; padding-bottom:20;">
-  <a href="feed" style="background:none; font-size:50; color:ffffff; position:center; text-decoration: none;"> <b>Почти как "Головные мюсли"</b> </a> 
-  </div>
+    @-webkit-keyframes rainbow {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+     
+    @keyframes rainbow {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+
+      </style>
+        
+        <!--<script language="JavaScript">
+     if(screen.width <= '640'){location.href="mfeed";}
+     else if(screen.width >= '1280'){} 
+      </script> -->
+        
+        <link rel="shortcut icon" href="source/icon.png" type="image/png">
+      </head>
+     
+      <div style="background-color:#000000; text-align:center; padding-top:15; padding-bottom:20;">
+      <a href="feed"  style="background:none; font-size:50; color:ffffff; position:center; text-decoration: none;" > <b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
+      </div>
   <div class="header" style="background-color:#e6e6e6; box-shadow: 0 0 5px;">
  
 <nav>
