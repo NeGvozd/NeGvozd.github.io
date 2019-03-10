@@ -6,7 +6,7 @@
 
 <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 
- <title>Домашка по информатике - Почти как "Головные мюсли"</title>
+ <title>10A-Домашка</title>
   <style>
 	  @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400');
    body {
@@ -18,7 +18,7 @@
    
       #bar, #content { overflow: auto; padding: 250;} 
 	  .content{padding-top: 6vw; padding-bottom: 6vw;
-	  padding-left:2vw; padding-right: 2vw; 
+	  padding-left:2vw; padding-right: 2vw;
 	  }
 	  .end{
 		 
@@ -91,8 +91,66 @@
     border: 3px solid #708090;  /* Параметры рамки */
     padding: 20px; /* Поля вокруг текста */
    } 
+
+	@keyframes rainbow{
+			0%{background-color: rgb(0, 162, 255);}
+		14.3%{background-color: rgb(28,52,176);}
+		28.6%{background-color: rgb(143, 19, 143);}
+		42.9%{background-color: rgb(218, 27, 27);}
+		57.2%{background-color: orange;}
+		71.5%{background-color: rgb(206, 206, 19);}
+		85.8%{background-color: rgb(50, 179, 50);}
+		 100%{background-color: rgb(0, 162, 255);}
+	}
+	@keyframes rainbow-text{
+			0%{background-color: rgb(0, 184, 255);}
+		14.3%{background-color: rgb(38, 97, 214);}
+		28.6%{background-color: rgb(172, 37, 172);}
+		42.9%{background-color: rgb(241, 13, 13);}
+		57.2%{background-color: rgb(255, 187, 0);}
+		71.5%{background-color: rgb(206, 228, 11);}
+		85.8%{background-color: rgb(31, 212, 55);}
+		 100%{background-color: rgb(0, 182, 255);}
+	}
+
+		.sections{
+			text-decoration: none;
+			text-align:center;
+		   color: white;
+			font-size: 24;
+		   padding-top: 8;
+			padding-bottom: 10;
+			padding-left: 24;
+			padding-right: 24;
+			margin-left: -4;
+		}
+
+		.sections:hover{
+			text-decoration: none;
+			text-align:center;
+		   color: white;
+			font-size: 24;
+			padding-top: 8;
+			padding-bottom: 10;
+			padding-left: 24;
+			padding-right: 24;
+			margin-left: -4;
+			background: rgba(255,255,255, 0.25);
+		}
+
+		.active{
+			text-decoration: none;
+			text-align:center;
+		   color: white;
+			font-size: 24;
+			padding-top: 8;
+			padding-bottom: 10;
+			padding-left: 24;
+			padding-right: 24;
+			margin-left: -4; 
+			background: rgba(0,0,0, 1);
+		}
    
-	  a:visited{color:0000FF;}
 	  a {font-family: verdana;
       padding-left:15px;
 	  padding-right:15px;}
@@ -107,96 +165,68 @@
 
       </style>
         
-        <!--<script language="JavaScript">
-     if(screen.width <= '640'){location.href="mfeed";}
-     else if(screen.width >= '1280'){} 
-      </script> -->
+       <head></head>
         
         <link rel="shortcut icon" href="source/icon.png" type="image/png">
       
      
-      <div style="background-color:#100b57; text-align:left; padding-top:15; padding-bottom:20; position:fixed; width: 100%; opacity: 0.93;">
+      <div style="animation: rainbow 120S infinite; text-align:center; 
+		padding-top:15; padding-bottom:18; position:center; width: 100%; 
+		opacity: 0.93;">
          <nav>
-      <a href=""  style="background:none; font-size:35; color:ffffff; position:center; text-decoration: none; padding-left: 70;" >
-          <b>Информатика-ответы</b> </a> 
-          <a href="#send_dz" style="text-decoration: none;
-           color: white;
-            float: right;
-             padding-right: 70;
-             padding-top: 14;
-             font-size: 20;
-             "><span>Отправить свое условие</span></a>
+      <a href=""  style="background:none; font-size:35; color:ffffff; position:center; text-decoration: none; " >
+          <b style="animation: rainbow-text 120S infinite;  padding-left: 5; padding-right: 5; padding-bottom: 4;">10А - Домашка</b> </a>          
 </nav>
+		</div>
+		<div style="animation: rainbow 120S infinite; text-align:center;
+		 padding-top:8; margin-top: 0; padding-bottom:10; position:sticky;
+		  width: 100%; opacity: 0.93; top: 0;">
+			<nav><a class="active"
+						href="">Информатика</a>
+					<a class="sections"
+						href="">Геометрия</a>
+						<a class="sections"
+						href="">Литература</a></nav>
       </div>
- <!-- <div class="header"> 
-<nav>
-
-<a href="news" style=" font-size:36; text-decoration:none; color:#323232;"><span>Новости</span></a> 
- 
- <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
- 
-	<a href="links" style="font-size:36; text-decoration:none; color:#909090;"><span">Контакты</span></a>
-    
- <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
- 
-<a href="archive" style=" font-size:36; text-decoration:none; color:#323232;"><span>Архив проектов</span></a> 
-
- 
- </nav>
-
-</div>	-->
-  
-
-<body>
-<!--<div id="bar">
-<nav><a href="feed"><font size="5">О проекте</font></a> <font size="5">|</font> 
-	<a href="news" style="text-decoration: none"><font size="5">Новости</font></a> <font size="5">|</font>
-	<a href="links" style="text-decoration: none"><font size="5">Контакты</font></a> </nav>
-       </div>-->      
-       
+<body>           
 	       <div class="content">		
 		  
-		        <div class="layer" style="margin-top:40;">
-    <h2> Домашка на <i>Четверг, 17 января 2019</i> </h2> 
-  <br>
-<a href="https://math.semestr.ru/inf/table.php" target="_blank">
-	<p style="font-size:20">Есть сайт, где ленивые могут вводить логические выражения и им выводится таблица истинности.
-	А мне не охота сюда перекидывать все 11 таблиц. </p>
-</a>
-		       </div>
-			<br>
-		       
-	      <div class="layer" style="margin-top:40;">
-    <h2> Домашка на <i>Четверг, 27 декабря 2018</i> </h2> 
-	 <img src="https://pp.userapi.com/c852132/v852132087/760f7/zigyzj52Nps.jpg" width=100% style="border-radius:5px">
-  <br>
-<a href="https://vk.com/doc162745048_487183529?hash=9afa0b1267efb93de4&dl=4c542db30e76821943" target="_blank">
-	<p style="font-size:20">Файл docx</p>
-</a>
-			</div>
-			<br>
-		       
-		        <div class="layer">
-		        <h2> Домашка на <i>Четверг, 13 декабря 2018</i> </h2> 
-	 <img src="source/123.PNG" width=100% style="border-radius:5px">
-<img src="source/134.PNG" width=100% style="border-radius:5px; padding-top:0;">
-			</div>
-		       <br>
-		       
-			<div class="layer" id="send_dz" style="padding-left:20; padding-right:20;">
-
-				<iframe width="100%" height= "100%" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__tjPKMBUNDFNVEVGVE5XQlk4SDkyRFpEVDZYTUNGQS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-
-			</div>	
-	</div>
-	</div>
-	
-
-          
-	
+				<div class="layer" style="margin-top:-40;">
+					<h2> Домашка на <i>Четверг, 17 января 2019</i> </h2> 
+				 <br>
+			  <a href="https://math.semestr.ru/inf/table.php" target="_blank">
+				  <p style="font-size:20">Есть сайт, где ленивые могут вводить логические выражения и им выводится таблица истинности.
+				  А мне не охота сюда перекидывать все 11 таблиц. </p>
+			  </a>
+								</div>
+						  <br>
+								
+						  <div class="layer" style="margin-top:0;">
+					<h2> Домашка на <i>Четверг, 27 декабря 2018</i> </h2> 
+					<img src="https://pp.userapi.com/c852132/v852132087/760f7/zigyzj52Nps.jpg" width=100% style="border-radius:5px">
+				 <br>
+			  <a href="https://vk.com/doc162745048_487183529?hash=9afa0b1267efb93de4&dl=4c542db30e76821943" target="_blank">
+				  <p style="font-size:20">Файл docx</p>
+			  </a>
+						  </div>
+						  <br>
+								
+								 <div class="layer">
+								 <h2> Домашка на <i>Четверг, 13 декабря 2018</i> </h2> 
+					<img src="source/123.PNG" width=100% style="border-radius:5px">
+			  <img src="source/134.PNG" width=100% style="border-radius:5px; padding-top:0;">
+						  </div>
+								<br>
+								
+						  <div class="layer" id="send_dz" style="padding-left:20; padding-right:20;">
+			  
+							  <iframe width="100%" height= "100%" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__tjPKMBUNDFNVEVGVE5XQlk4SDkyRFpEVDZYTUNGQS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+			  
+						  </div>	
+	</div>        
 </body>
-<div style=" background-color:#333333; ">
+<div style=" background-color:#333333; bottom: 0; width: 100%;">
 <a href="feed" style="text-decoration:none; color:white; ">
-<p style="  text-align: center; font-family: 'Fira Sans Extra Condensed', sans-serif; font-size: 20px; padding-top: 10; ">Гвоздков 10a</p>
+<p style="  text-align: center; font-family: 'Fira Sans Extra Condensed', sans-serif; font-size: 20px; padding-top: 10; ">Гвоздков</p>
 </a>
 </div>
