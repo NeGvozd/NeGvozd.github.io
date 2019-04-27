@@ -12,7 +12,7 @@
 	  
    body {
    margin: 0;
-    background: #f0f0f0;
+    background: #c0c0c0;
     color: #000000;
    }
    <head>
@@ -35,14 +35,14 @@
       }
      
    .header {
-   text-align: center;
+		text-align: center;
    opacity: 0.95;
 	   color: #000000;
-	border-bottom: 1px solid #DCDCDC;	  
+	border-bottom: 1px solid #808080;	  
    position: sticky;
-	   position: -webkit-sticky;
+   position: -webkit-sticky;
   top: 0;
-   background: #FFFFFF; 
+   background: #b1b1b1; 
    width: 100%;  left:0;
     height: 50; /* Высота слоя */}
     
@@ -55,16 +55,17 @@
    width: 100%;  left:0;
     height: 63; /* Высота слоя */}
    #header h1 { padding: 0; margin: 0; }
+
    .layer {
    text-align: center;
-   box-shadow: 0 0 5px;
-    background: #FFFFFF; /* Цвет фона */
+   box-shadow: 0 0 10px rgb(10,10,10);
+    background: #fafafa; /* Цвет фона */
      /* Параметры рамки */
 	 padding-top: 20px;
 	 padding-bottom: 20px;
     padding-left: 60px; 
 	padding-right: 60px;
-      border-radius: 7px;
+	border-radius: 7px;
    } 
    
    
@@ -104,12 +105,12 @@
 	  h5 {font-family: verdana;}
       
           .rainbow-animated {
-      background: linear-gradient(to right, red, orange , yellow, rgb(0, 187, 0), cyan, blue, violet);
+      background: linear-gradient(to left, red, orange , yellow, rgb(0, 187, 0), cyan, blue, violet);
       background-size: 700% 200%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      -webkit-animation: rainbow 90s infinite alternate;
-      animation: rainbow 90s infinite alternate;
+      -webkit-animation: rainbow 120s infinite alternate;
+      animation: rainbow 120s infinite alternate;
       font-size: 50px;
       line-height: 10px;
     }
@@ -136,22 +137,23 @@
         <link rel="shortcut icon" href="source/icon.png" type="image/png">
       </head>
      
-      <div style="background-color:#000000; text-align:center; padding-top:15; padding-bottom:20;">
-      <a href="feed"  style="background:none; font-size:50;  position:center; text-decoration: none;" > <b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
-      </div>
+      <div style="background-color:#ebebeb; text-align:center; padding-top:15; padding-bottom:20;">
+			<a href="feed"  style="background:none; font-size:50; color:black; position:center; text-decoration: none;" > 
+				<b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
+			</div>
   <div class="header">
  
 <nav>
 
-<a href="news" style=" font-size:36; text-decoration:none; color:#323232;"><span>Новости</span></a> 
+<a href="news" style=" font-size:36; text-decoration:none; color:white;"><span>Новости</span></a> 
  
  <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
  
-	<a href="links" style="font-size:36; text-decoration:none; color:#323232;"><span">Контакты</span></a>
+	<a href="links" style="font-size:36; text-decoration:none; color:white;"><span">Контакты</span></a>
     
  <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
  
-<a href="archive" style=" font-size:36; text-decoration:none; color:#909090;"><span>Архив проектов</span></a> 
+<a href="archive" style=" font-size:36; text-decoration:none; color:#313131;"><span>Архив проектов</span></a> 
 
  
  </nav>
