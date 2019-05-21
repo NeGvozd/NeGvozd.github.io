@@ -15,11 +15,10 @@
 		body {
 		margin: 0;
 		 /*background:linear-gradient(to bottom, #fcfcfc 0%, #c0c0c0 80%, #777777 100%);*/
-			background-color:#fcfcfc;
+		 background-color: #CCC;
 		
 		 color: #000000;
 		}
-		<head>
 		
 		#bar, #content { overflow: auto; } 
 			.content{padding-bottom: 0vw;
@@ -46,7 +45,7 @@
    position: sticky;
    position: -webkit-sticky;
   top: 0;
-   background: #949494; 
+   background: #999999; 
    width: 100%;  left:0;
     height: 50; /* Высота слоя */
 	 }
@@ -128,7 +127,8 @@
 		  h5 {font-family: verdana;}
 		  
 				 .rainbow-animated {
-			background: linear-gradient(to left, red, orange , yellow, rgb(0, 187, 0), cyan, blue, violet);
+			background: linear-gradient(to left, cyan, blue, violet, red, orange , yellow, #00CC33);
+			/*background: linear-gradient(to left, blue, violet, red, orange, yellow, rgb(0,187,0), cyan);*/
 			background-size: 700% 200%;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
@@ -140,13 +140,13 @@
 		  
 		 @-webkit-keyframes rainbow {
 			0% { background-position: 0% 50% }
-			50% { background-position: 100% 50% }
+			50% { background-position: 100% 100% }
 			100% { background-position: 0% 50% }
 		 }
 		  
 		 @keyframes rainbow {
 			0% { background-position: 0% 50% }
-			50% { background-position: 100% 50% }
+			50% { background-position: 100% 100% }
 			100% { background-position: 0% 50% }
 		 }
 	
@@ -156,11 +156,11 @@
 		  if(screen.width <= '640'){location.href="mfeed";}
 		  else if(screen.width >= '1280'){} 
 			</script> -->
-			  
+			  <head>
 			  <link rel="shortcut icon" href="source/icon.png" type="image/png">
 			</head>
 		  
-			<div style="background-color:#ebebeb; text-align:center; padding-top:15; padding-bottom:20;">
+			<div style="background-color:#333333; text-align:center; padding-top:15; padding-bottom:20;">
 				<a href="feed"  style="background:none; font-size:50; color:black; position:center; text-decoration: none;" > 
 					<b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
 				</div>
