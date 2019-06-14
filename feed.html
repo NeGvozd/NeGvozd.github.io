@@ -15,33 +15,41 @@
 		body {
 		margin: 0;
 		 /*background:linear-gradient(to bottom, #fcfcfc 0%, #c0c0c0 80%, #777777 100%);*/
-		 background-color: #CCC;
+		 background-color: rgb(185, 184, 184);
 		
 		 color: #000000;
 		}
 		
 		#bar, #content { overflow: auto; } 
-			.content{padding-bottom: 0vw;
-		  
+			.content{padding-bottom: 0vw;	  
 		  }
-		  .end{
-			 
-			opacity: 0.8;
-		text-align: center;
-		  width: 100%;
-		 left: 0; bottom: 0; /* Левый нижний угол */
-		 height: 47;
-		 margin: 0;
-		 padding: 0; /* Поля вокруг текста */
-		background: #000000; 
-		 /* Цвет текста */    
-			}
 		  
+			div.scrollmenu {
+    background-color: rgb(104, 104, 104);
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-top: 3px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #404040;
+}	
+
+
 		.header {
 			text-align: center;
    opacity: 0.95;
-	   color: #000000;
-	border-bottom: 1px solid #808080;	  
+	   color: #000000; 
    position: sticky;
    position: -webkit-sticky;
   top: 0;
@@ -49,15 +57,6 @@
    width: 100%;  left:0;
     height: 50; /* Высота слоя */
 	 }
-		 
-		 #header2 {
-		text-align: center;
-		opacity: 0.9;
-			color: #000000;   
-		background: #fcfcfc; 
-		width: 100%;  left:0;
-		 height: 47; /* Высота слоя */}
-		#header h1 { padding: 0; margin: 0; }
 		
 		.layer {
 			text-align: center;
@@ -69,37 +68,8 @@
     padding-left: 60px; 
 	padding-right: 60px;
 	border-radius: 7px;
-		} 
-		
-		
-		.layer2 {
-		text-align: center;
-		float:left;      
-		 background: #FFFFFF; /* Цвет фона */
-		 box-shadow: 0 0 5px;
-		  padding-top: 10px;
-		 padding-bottom: 20px;
-		 padding-left: 60px; 
-		padding-right: 60px;
-		width: 35vw;
-			height:150;
-		border-radius: 7px;   
-		} 
-		
-		.layer3 {
-		text-align: center;
-		float:right;    
-		 background: #FFFFFF; /* Цвет фона */
-		 box-shadow: 0 0 5px;
-		 padding-top: 10px;
-		 padding-bottom: 20px;
-		 padding-left: 60px; 
-		padding-right: 60px;	
-		width:35vw;
-			height:150;
-		border-radius: 7px;   
-		} 
-		
+		} 	
+
 		.footer {
 	  position: static;
 	  left: 0;
@@ -107,16 +77,13 @@
 	  top:100%;
 	  width: 100%;
 	  height: 80px;
-	  
 	}
 		a{
 		color:#000000; 
 		text-decoration:none;
 		padding-left:15px;
 		padding-right:15px;
-		}
-		
-		 
+		}		 
 		 
 		  a {font-family: verdana;}
 			p {font-family: verdana;}
@@ -166,20 +133,13 @@
 				</div>
 	  <div class="header">
 	 
-	<nav>
-	
-	<a href="news" style=" font-size:36; text-decoration:none; color:white;"><span>Новости</span></a> 
-	 
-	 <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
-	 
-		<a href="links" style="font-size:36; text-decoration:none; color:white;"><span">Контакты</span></a>
-		 
-	 <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
-	 
-	<a href="archive" style=" font-size:36; text-decoration:none; color:white;"><span>Архив проектов</span></a> 
-	
-	 
-	 </nav>
+	<div class="scrollmenu">	
+		<a href="news" style=" font-size:36; text-decoration:none; color:white;"><span>Новости</span></a> 	 
+	 	<font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 10; padding-left: 10;">|</span></font>	 
+		<a href="links" style="font-size:36; text-decoration:none; color:white;"><span">Контакты</span></a>		 
+	  <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 10; padding-left: 10;">|</span></font>	 
+		<a href="archive" style=" font-size:36; text-decoration:none; color:white;"><span>Архив проектов</span></a> 	 
+	</div>
 		  
 	<!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
 	
