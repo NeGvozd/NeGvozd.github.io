@@ -15,24 +15,33 @@
     background: #c0c0c0;
     color: #000000;
    }
-   <head>
    
    #bar, #content { overflow: auto; padding: 250;} 
 	  .content{padding-top: 2vw; padding-bottom: 6vw;
 	  padding-left:2vw; padding-right: 2vw; 
 	  }
-	  .end{
-		 
-      opacity: 0.8;
-   text-align: center;
-     width: 100%;
-    left: 0; bottom: 0; /* Левый нижний угол */
-    height: 47;
-    margin: 0;
-    padding: 0; /* Поля вокруг текста */
-   background: #000000; 
-    /* Цвет текста */    
-      }
+
+	  div.scrollmenu {
+    background-color: rgb(104, 104, 104);
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-top: 3px;
+    text-decoration: none;
+		margin-left: -4;
+}
+
+div.scrollmenu a:hover {
+    background-color: #404040;
+}	
      
    .header {
 		text-align: center;
@@ -45,16 +54,6 @@
    background: #b1b1b1; 
    width: 100%;  left:0;
     height: 50; /* Высота слоя */}
-    
-    #header2 {
-   text-align: center;
-   opacity: 0.8;
-	   color: #000000;
-   
-   background: #191919; 
-   width: 100%;  left:0;
-    height: 63; /* Высота слоя */}
-   #header h1 { padding: 0; margin: 0; }
 
    .layer {
    text-align: center;
@@ -66,31 +65,6 @@
     padding-left: 60px; 
 	padding-right: 60px;
 	border-radius: 7px;
-   } 
-   
-   
-   .layer2 {
-   font-size: 2.3vw;
-   text-align:center;
-   height:30vw;
-   width:37vw;
-	  position: absolute; /* Абсолютное позиционирование */    
-    left:  4vw; /* Положение от правого края */
-    background: #f2f2f2; /* Цвет фона */
-    border: 3px solid #708090;  /* Параметры рамки */
-    padding: 20px; /* Поля вокруг текста */
-   } 
-   
-   .layer3 {
-   font-size: 2.3vw;
-   text-align:center;
-   height:30vw;
-   width:37vw;
-	  position: absolute; /* Абсолютное позиционирование */    
-    right:  4vw; /* Положение от правого края */
-    background: #f2f2f2; /* Цвет фона */
-    border: 3px solid #708090;  /* Параметры рамки */
-    padding: 20px; /* Поля вокруг текста */
    } 
    
 	  a:visited{color:0000FF;}
@@ -105,27 +79,28 @@
 	  h5 {font-family: verdana;}
       
           .rainbow-animated {
-      background: linear-gradient(to left, red, orange , yellow, rgb(0, 187, 0), cyan, blue, violet);
-      background-size: 700% 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-animation: rainbow 120s infinite alternate;
-      animation: rainbow 120s infinite alternate;
-      font-size: 50px;
-      line-height: 10px;
-    }
-     
-    @-webkit-keyframes rainbow {
-      0% { background-position: 0% 50% }
-      50% { background-position: 100% 50% }
-      100% { background-position: 0% 50% }
-    }
-     
-    @keyframes rainbow {
-      0% { background-position: 0% 50% }
-      50% { background-position: 100% 50% }
-      100% { background-position: 0% 50% }
-    }
+			background: linear-gradient(to left, cyan, blue, violet, red, orange , yellow, #00CC33);
+			/*background: linear-gradient(to left, blue, violet, red, orange, yellow, rgb(0,187,0), cyan);*/
+			background-size: 700% 200%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-animation: rainbow 120s infinite alternate;
+			animation: rainbow 120s infinite alternate;
+			font-size: 50px;
+			line-height: 10px;
+		 }
+		  
+		 @-webkit-keyframes rainbow {
+			0% { background-position: 0% 50% }
+			50% { background-position: 100% 100% }
+			100% { background-position: 0% 50% }
+		 }
+		  
+		 @keyframes rainbow {
+			0% { background-position: 0% 50% }
+			50% { background-position: 100% 100% }
+			100% { background-position: 0% 50% }
+		 }
 
       </style>
         
@@ -134,33 +109,26 @@
      else if(screen.width >= '1280'){} 
       </script> -->
         
+   <head>
         <link rel="shortcut icon" href="source/icon.png" type="image/png">
       </head>
      
-      <div style="background-color:#ebebeb; text-align:center; padding-top:15; padding-bottom:20;">
-			<a href="feed"  style="background:none; font-size:50; color:black; position:center; text-decoration: none;" > 
-				<b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
-			</div>
-  <div class="header">
- 
-<nav>
-
-<a href="news" style=" font-size:36; text-decoration:none; color:white;"><span>Новости</span></a> 
- 
- <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
- 
-	<a href="links" style="font-size:36; text-decoration:none; color:white;"><span">Контакты</span></a>
-    
- <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
- 
-<a href="archive" style=" font-size:36; text-decoration:none; color:#313131;"><span>Архив проектов</span></a> 
-
- 
- </nav>
-	  
-<!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
-
-</div>	
+      <div style="background-color:#333333; text-align:center; padding-top:15; padding-bottom:20;">
+				<a href="feed"  style="background:none; font-size:50; color:black; position:center; text-decoration: none;" > 
+					<b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
+				</div>
+		<div class="header">
+	 
+	<div class="scrollmenu">	
+		<a href="news" style=" font-size:36; text-decoration:none; color:white;">
+			<span>Новости</span></a> 	 	 
+		<a href="links" style="font-size:36; text-decoration:none; color:white;"><span">Контакты</span></a>		  
+		<a href="archive" style=" font-size:36; text-decoration:none; color:white; background-color: #555"><span>Архив проектов</span></a> 	 
+	</div>
+			
+	<!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
+	
+	</div>	
   
 
 <body>
@@ -187,7 +155,7 @@
 <p>
 Научный руководитель - Гажур Илья Александрович.
   </p>
-  <a href="https://vk.com/doc162745048_459133956" style="color:##1E90FF;"  target="_blank"><h3>Реферат о проекте</h3></a>
+  <a href="https://vk.com/doc162745048_459133956" style="color:#1E90FF"  target="_blank"><h3>Реферат о проекте</h3></a>
 		      <br>
 		      <IMG alt=dog src="https://pp.userapi.com/c831308/v831308108/5ddec/mGQgPMi-34s.jpg" width="85%"> 
 	      </div>
@@ -228,7 +196,7 @@
 			     <a href="https://vk.com/ngvozdkov?w=wall162745048_832"  target="_blank">Подробнее о приложении.</a> 
 			     <br> <br>
 			     <a href="https://vk.com/video162745048_456239095"  target="_blank">Запись функционала</a> 
-	          <a href="https://yadi.sk/d/vh-vSdQW3ZVLvx" style="color:##1E90FF;" target="_blank"><h3>Скачать версию 1.2</h3></a>
+	          <a href="https://yadi.sk/d/vh-vSdQW3ZVLvx" style="color:#1E90FF" target="_blank"><h3>Скачать версию 1.2</h3></a>
 			     <br>
           <IMG alt=dog src="https://pp.userapi.com/c834104/v834104156/19801a/AbV1jGvVjK4.jpg" width="85%">
 		   <IMG alt=dog src="https://pp.userapi.com/c834104/v834104156/198023/k8IvewXZuGY.jpg" width="85%">
@@ -238,7 +206,7 @@
 	<div class="layer">
           <h2>Перевод систем счисления</h2>            
           <p>Простой переводчик систем счисления с возможностью показа алгоритма перевода.</p>	
-	<a href="https://yadi.sk/d/oltYSAf93ZPWuk" style="color:##1E90FF;" target="_blank"><h3>Скачать переводчик</h3></a>              
+	<a href="https://yadi.sk/d/oltYSAf93ZPWuk" style="color:#1E90FF" target="_blank"><h3>Скачать переводчик</h3></a>              
 			<IMG alt=dog src="https://pp.userapi.com/c850024/v850024873/3119f/yJwvjHk-iks.jpg" width="75%">  		  
 	</div>  
 	
@@ -250,7 +218,7 @@
  <div class="layer">
           <h2>Блокнот 2.4</h2>            
           <p>Улучшенная версия блокнота, с переработанным дизайном, и поддержкой сочетаний клавиш: Добавить(Ctrl+N), Сохранить(Ctrl+S), Удалить(Ctrl+D)</p>		
-	           <a href="https://yadi.sk/d/91o1aZFs3XfAHf" style="color:##1E90FF;" target="_blank"><h3>Скачать блокнот 2.4</h3></a> 	
+	           <a href="https://yadi.sk/d/91o1aZFs3XfAHf" style="color:#1E90FF" target="_blank"><h3>Скачать блокнот 2.4</h3></a> 	
           <IMG alt=dog src="https://pp.userapi.com/c834104/v834104121/163fd7/aH_6Sqyos0o.jpg" width="85%">
           <IMG alt=dog src="https://pp.userapi.com/c834104/v834104121/163fce/cTZGY1hVDjw.jpg" width="85%">
 
@@ -264,9 +232,9 @@
           <p>В данной работе была поставлена задача разработать и запрограммировать текстовый редактор и разобраться в принципах его работы.</p>
 		  <p>Также задача была расширенна внедрением в приложение возможности поиска по содержимому и заголовкам заметок. </p>
 		<a href="https://negvozd.github.io/news#NoteBook2.1">Подробнее о блокноте.</a> 
-		           <a href="https://yadi.sk/d/z1jZOwcY3UAnEM" style="color:##1E90FF;" target="_blank"><h3>Скачать блокнот 2.1</h3></a> 
+		           <a href="https://yadi.sk/d/z1jZOwcY3UAnEM" style="color:#1E90FF" target="_blank"><h3>Скачать блокнот 2.1</h3></a> 
 
-         <a href="https://vk.com/doc162745048_460395666" style="color:##1E90FF;" target="_blank"><h3>Реферат о проекте</h3></a>
+         <a href="https://vk.com/doc162745048_460395666" style="color:#1E90FF" target="_blank"><h3>Реферат о проекте</h3></a>
 		
 		
           <IMG alt=dog src="https://pp.userapi.com/c621704/v621704195/8375b/6ZjxjpsJzS4.jpg" width="85%">
@@ -283,7 +251,7 @@
           Первое полноценное exe приложение, которое есть где-то помимо памяти моего компьютера.
           </p>
 		  <a href="https://negvozd.github.io/news#notes1">Подробнее о заметках.</a>
-          <a href="https://yadi.sk/d/PwM2jdeY3PqgqV" style="color:##1E90FF;" target="_blank"><h3>Скачать заметки</h3></a> 
+          <a href="https://yadi.sk/d/PwM2jdeY3PqgqV" style="color:#1E90FF" target="_blank"><h3>Скачать заметки</h3></a> 
  <br>
 <IMG alt=dog src="https://pp.userapi.com/c841138/v841138923/3d0aa/sycc91cjl0g.jpg" width="85%"> 
           </div> 
@@ -309,4 +277,3 @@
 	
 		  </body>
 <p style=" text-align: center; font-family: 'Fira Sans Extra Condensed', sans-serif; font-size: 20px">Никита Гвоздков</p>
-
