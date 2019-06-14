@@ -20,19 +20,29 @@
 	  .content{padding-top: 2vw; padding-bottom: 6vw;
 	  padding-left:2vw; padding-right: 2vw; 
 	  }
-	  .end{
-		 
-      opacity: 0.8;
-   text-align: center;
-     width: 100%;
-    left: 0; bottom: 0; /* Левый нижний угол */
-    height: 47;
-    margin: 0;
-    padding: 0; /* Поля вокруг текста */
-   background: #000000; 
-    /* Цвет текста */    
-      }
      
+		div.scrollmenu {
+    background-color: rgb(104, 104, 104);
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-top: 3px;
+    text-decoration: none;
+		margin-left: -4;
+}
+
+div.scrollmenu a:hover {
+    background-color: #404040;
+}	
+
    .header {
    text-align: center;
    opacity: 0.95;
@@ -45,16 +55,6 @@
    width: 100%;  left:0;
     height: 50; /* Высота слоя */
 	}
-    
-    #header2 {
-   text-align: center;
-   opacity: 0.8;
-	   color: #000000;
-   
-   background: #191919; 
-   width: 100%;  left:0;
-    height: 63; /* Высота слоя */}
-   #header h1 { padding: 0; margin: 0; }
    
    .layer {
    text-align: center;
@@ -68,40 +68,13 @@
 	border-radius: 7px;
    } 
    
-   
-   .layer2 {
-   font-size: 2.3vw;
-   text-align:center;
-   height:30vw;
-   width:37vw;
-	  position: absolute; /* Абсолютное позиционирование */    
-    left:  4vw; /* Положение от правого края */
-    background: #FFFFFF; /* Цвет фона */
-    border: 3px solid #708090;  /* Параметры рамки */
-    padding: 20px; /* Поля вокруг текста */
-   } 
-   
-   .layer3 {
-   font-size: 2.3vw;
-   text-align:center;
-   height:30vw;
-   width:37vw;
-	  position: absolute; /* Абсолютное позиционирование */    
-    right:  4vw; /* Положение от правого края */
-    background: #FFFFFF; /* Цвет фона */
-    border: 3px solid #708090;  /* Параметры рамки */
-    padding: 20px; /* Поля вокруг текста */
-   } 
-   
    a{
    color:#000000; 
    text-decoration:none;
    padding-left:15px;
 	padding-right:15px;
-   }
- 
+   } 
    
-	  a:visited{}
 	  a {font-family: verdana; color: #161616;}
       p {font-family: verdana; color: #202020; font-size: 18;}
 	  h1 {font-family: verdana; color: #202020;}
@@ -110,28 +83,29 @@
 	  h4 {font-family: verdana; color: #202020;}
 	  h5 {font-family: verdana; color: #202020;}
       
-        .rainbow-animated {
-      background: linear-gradient(to left, red, orange , yellow, rgb(0, 187, 0), cyan, blue, violet);
-      background-size: 700% 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-animation: rainbow 120s infinite alternate;
-      animation: rainbow 120s infinite alternate;
-      font-size: 50px;
-      line-height: 10px;
-    }
-     
-    @-webkit-keyframes rainbow {
-      0% { background-position: 0% 50% }
-      50% { background-position: 100% 50% }
-      100% { background-position: 0% 50% }
-    }
-     
-    @keyframes rainbow {
-      0% { background-position: 0% 50% }
-      50% { background-position: 100% 50% }
-      100% { background-position: 0% 50% }
-    }
+		.rainbow-animated {
+			background: linear-gradient(to left, cyan, blue, violet, red, orange , yellow, #00CC33);
+			/*background: linear-gradient(to left, blue, violet, red, orange, yellow, rgb(0,187,0), cyan);*/
+			background-size: 700% 200%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-animation: rainbow 120s infinite alternate;
+			animation: rainbow 120s infinite alternate;
+			font-size: 50px;
+			line-height: 10px;
+		 }
+		  
+		 @-webkit-keyframes rainbow {
+			0% { background-position: 0% 50% }
+			50% { background-position: 100% 100% }
+			100% { background-position: 0% 50% }
+		 }
+		  
+		 @keyframes rainbow {
+			0% { background-position: 0% 50% }
+			50% { background-position: 100% 100% }
+			100% { background-position: 0% 50% }
+		 }
 
       </style>
         
@@ -144,26 +118,22 @@
         <head>
                 </head>
      
-      <div style="background-color:#ebebeb; text-align:center; padding-top:15; padding-bottom:20;">
-		<a href="feed"  style="background:none; font-size:50; color:black; position:center; text-decoration: none;" > 
-			<b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
-      </div>
-  <div class="header">
- 
-<nav>
-
-<a href="news" style=" font-size:36; text-decoration:none; color:#313131;"><span>Новости</span></a> 
- 
- <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
- 
-	<a href="links" style="font-size:36; text-decoration:none; color:#ffffff;"><span">Контакты</span></a>
-    
- <font size="6"><span style=" color: #000000; vertical-align:2;  padding-right: 15; padding-left: 15;">|</span></font>
- 
-<a href="archive" style=" font-size:36; text-decoration:none; color:#ffffff;"><span>Архив проектов</span></a> 
-
- 
- </nav>
+								<div style="background-color:#333333; text-align:center; padding-top:15; padding-bottom:20;">
+									<a href="feed"  style="background:none; font-size:50; color:black; position:center; text-decoration: none;" > 
+										<b class="rainbow-animated">Почти как "Головные мюсли"</b> </a> 
+									</div>
+							<div class="header">
+						 
+						<div class="scrollmenu">	
+							<a href="news" style=" font-size:36; text-decoration:none; color:white; background-color: #555">
+								<span>Новости</span></a> 	 	 
+							<a href="links" style="font-size:36; text-decoration:none; color:white;"><span">Контакты</span></a>		  
+							<a href="archive" style=" font-size:36; text-decoration:none; color:white;"><span>Архив проектов</span></a> 	 
+						</div>
+								
+						<!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
+						
+						</div>	
 	  
 <!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
 
