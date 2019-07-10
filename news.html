@@ -21,7 +21,7 @@
 	  padding-left:2vw; padding-right: 2vw; 
 	  }
      
-		div.scrollmenu {
+div.scrollmenu {
     background-color: rgb(104, 104, 104);
     overflow: auto;
     white-space: nowrap;
@@ -31,12 +31,18 @@ div.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 34px;
+    padding-right: 34px;
     padding-bottom: 8px;
     padding-top: 3px;
     text-decoration: none;
-		margin-left: -4;
+    margin-left: -4;
+	font-size:30;
+}
+
+@media screen and (max-width: 1024px)
+{
+	div.scrollmenu a{font-size: 46;}
 }
 
 div.scrollmenu a:hover {
@@ -53,7 +59,7 @@ div.scrollmenu a:hover {
   top: 0;
    background: #b1b1b1; 
    width: 100%;  left:0;
-    height: 50; /* Высота слоя */
+    height: 47; /* Высота слоя */
 	}
    
    .layer {
@@ -125,10 +131,11 @@ div.scrollmenu a:hover {
 							<div class="header">
 						 
 						<div class="scrollmenu">	
-							<a href="news" style=" font-size:36; text-decoration:none; color:white; background-color: #555">
+							<a href="news" style="background-color: #555">
 								<span>Новости</span></a> 	 	 
-							<a href="links" style="font-size:36; text-decoration:none; color:white;"><span">Контакты</span></a>		  
-							<a href="archive" style=" font-size:36; text-decoration:none; color:white;"><span>Архив проектов</span></a> 	 
+							<a href="links"><span">Контакты</span></a>		  
+							<a href="dz_informatics"><span>Домашка</span></a> 	
+							<a href="archive"><span>Архив проектов</span></a> 	 
 						</div>
 								
 						<!--<a><font size="6.5">Почти как "Головные мюсли"</font></a>-->
