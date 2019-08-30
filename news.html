@@ -22,7 +22,7 @@
 	  }
      
 div.scrollmenu {
-    background-color: rgb(104, 104, 104);
+    background-color: rgba(104, 104, 104, 0.315);
     overflow: auto;
     white-space: nowrap;
 }
@@ -38,6 +38,8 @@ div.scrollmenu a {
     text-decoration: none;
     margin-left: -4;
 	font-size:30;
+	border-left: 2px solid white;
+	/* border-right: 1px solid white; */
 }
 
 @media screen and (max-width: 1024px)
@@ -51,13 +53,12 @@ div.scrollmenu a:hover {
 
    .header {
    text-align: center;
-   opacity: 0.95;
 	   color: #000000;
-	border-bottom: 1px solid #808080;	  
+	/* border-bottom: 1px solid #808080;	   */
    position: sticky;
    position: -webkit-sticky;
   top: 0;
-   background: #b1b1b1; 
+   /* background: #b1b1b1;  */
    width: 100%;  left:0;
     height: 47; /* Высота слоя */
 	}
@@ -131,7 +132,7 @@ div.scrollmenu a:hover {
 							<div class="header">
 						 
 						<div class="scrollmenu">	
-							<a href="news" style="background-color: #555">
+							<a href="news" style="background-color: #555; border:none;">
 								<span>Новости</span></a> 	 	 
 							<a href="links"><span">Контакты</span></a>		  
 							<a href="dz_informatics"><span>Домашка</span></a> 	
