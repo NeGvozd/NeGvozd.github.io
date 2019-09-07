@@ -58,6 +58,44 @@
 	margin-bottom: 20px; 
    }  
    
+   @media screen and (max-width: 1024px)
+{
+	.left{
+		margin-left: 0; 
+		width: 450px; 
+		float:left;
+	}
+	.right{
+		float:left; 
+		margin-left: 20px; 
+		width: 450px;
+	}
+}
+   @media screen and (min-width: 1025px)
+{
+	.left{
+		margin-left: 0; 
+		width: 520px; 
+		float:left;
+	}
+	.right{
+		float:left; 
+		margin-left: 20px; 
+		width: 520px;
+	}
+}
+
+   /* .left{
+	margin-left: 0; 
+	width: 520px; 
+	float:left;
+   } */
+   /* .right{
+	float:left; 
+	margin-left: 20px; 
+	width: 520px;
+   } */
+
    .layer h3{
 	   padding-left: 10px;
 	   text-align: left;
@@ -174,7 +212,7 @@
       </div>
 <body>           
 	       <div class="content">		
-		       <div style="margin-left: 0; width: 520px; float:left;">
+		       <div class="left">
 				<div class="layer" style="margin-top:0; float:none;">
 					<h3>Понедельник</h3> 			       
 					<table>
@@ -279,7 +317,7 @@
 
                 
 	</div> 
-	<div style="float:left; margin-left: 20px; width: 520px;">
+	<div class="right">
 			<div class="layer" style="margin-top:0; float:none;">
 					<h3>Четверг</h3> 			       
 					<table>
