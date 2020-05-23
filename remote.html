@@ -50,20 +50,8 @@
 			position:center; 
 			text-decoration: none; 
 		}
-		.year-end {
-			font-size:30px;
-			position: center;
-			text-decoration: none;
-			color:rgb(151,151,151);
-			text-align: center;	   
-   			box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-   			background: rgb(255, 255, 255);
-			padding-top: 1px;
-			padding-bottom: 20px;
-   			padding-left: 0px; 
-			padding-right: 0px;
- 			border-radius: 17px;
-		}
+		
+		.year-end h1{font-size: 30px; padding: 0 50;}
 	}
 	@media (max-width: 530px){
 		.header_title{
@@ -73,8 +61,11 @@
 			position:center; 
 			text-decoration: none; 
 		}
-		.year-end {
-			font-size:20px;
+		.year-end h1{font-size: 20px; padding: 0 10;}
+		
+	}
+
+	.year-end {
 			position: center;
 			text-decoration: none;
 			color:rgb(151, 151, 151);
@@ -87,7 +78,7 @@
 			padding-right: 0px;
  			border-radius: 17px;
 		}
-	}
+
 	.header {
    		text-align: center;
    		opacity: 0.95;
@@ -116,20 +107,22 @@
   list-style: none;
   counter-reset: li;
   font-family: verdana;	
+  
 }
 .pills li {
   padding: 10px 0;
   position: relative;
   margin-bottom: 0.75em;
-  padding-left: 1em;
+  padding-left: 5px;
   background: #E3DEDC;
+  text-align: left;
 }
 .pills li:before {
   padding: 10px 0;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -0.7em;
+  left: -30px;
   width: 1.875em;
   text-align: center;
   color: white;
@@ -222,9 +215,9 @@
 <body>           
 	
 	<div class="year-end" style="margin-top: 20px; margin-left:2vw; margin-right: 2vw; margin-bottom: 10px;">
-		<p><b>Не знаешь, с чем себя поздравить? <b style="color: rgba(30, 0, 255, 0.603)">
-			Поздравь себя с окончанием учебы!</b></b></p>
-			<p style="font-size: 25px;">Собери учебники в кучку по этому списку:</p>
+		<h1>Не знаешь, с чем себя поздравить? <b style="color: rgba(30, 0, 255, 0.603)">
+			Поздравь себя с окончанием учебы!</b></h1>
+			<p>Собери учебники в кучку по этому списку:</p>
 			<ol class="pills">
 				<li><b>Алгебра:</b> учебник 1шт</li>
 				<li><b>Английский:</b> учебник и тетрадь</li>
