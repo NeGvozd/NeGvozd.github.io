@@ -7,6 +7,7 @@
     <!-- Google Fonts Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
+        /* Общие стили */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -14,55 +15,99 @@
         }
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            background-color: rgb(190, 190, 190);
-            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #16161a;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            height: 50px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav li {
+            margin-right: 1rem;
+        }
+        li {
+            color: #2cb67d;
+        }
+        a {
+            text-decoration: none;
+            color: #fffffe;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #7f5af0;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content-bg {
+            background-color: #16161a;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .content-card {
+            background-color: #242629;
+            margin: 0;
+            padding: 0;
+            border-radius: 0.4rem;
+        }
+        section {
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .title-section {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            margin-top: 3rem;
             flex-direction: column;
         }
-        header {
-			animation: rainbow 120S infinite;
-            background-color: #fff;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,.1);
-            max-width: 800px;
-            width: 100%;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            width: 100%;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,.1);
-			margin-bottom: 1em;
-        }
-        section {
-            margin-bottom: 2rem;
+        .title-section img {
+            max-width: 700px; 
+            border-radius: 0.5rem;
+            border: 0.3rem solid #010101;
         }
         h1 {
-            font-size: 2.5rem;
-			color: #fff;
-			border-radius: 5px;
-			padding-left: 10px;
-			padding-right: 12px;
-			padding-bottom: 6px;
-			padding-top: 4px;
-			background-color: rgba(255, 255, 255, .3)
+            font-size: 4rem;
+            color: #fffffe;
+            padding-bottom: 1.5rem;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
+        h2 {
+            color: #fffffe;
+            padding-bottom: 0.5rem;
         }
-        li {
+        h3 {
+            border-radius: 0.4rem;
+            color: #94a1b2;
+            background-color: #242629;
+            padding: 4px 12px;
             margin-bottom: 0.5rem;
+        }
+        p {
+            line-height: 1.6;
+            color: #94a1b2;
         }
         strong {
             font-weight: bold;
+        }
+        li strong {
+            font-weight: bold;
+            color: #fffffe;
         }
         footer {
             background-color: #333;
@@ -70,53 +115,87 @@
             text-align: center;
             padding: 1rem;
             width: 100%;
-            position: fixed;
-            bottom: 0;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: underline;
+            position: relative; /* Для мобильных устройств */
         }
         button {
             cursor: pointer;
             padding: 0.5rem 1rem;
-            background-color: #007BFF;
+            background-color: #7f5af0;
             color: #fff;
             border: none;
-            border-radius: 0.25rem;
+            border-radius: 0.5rem;
             transition: all 0.3s ease;
         }
-        button:hover {
-            background-color: #0056b3;
+        button p {
+            font-size: 1rem;
+            color: #fffffe;
         }
-
-		@keyframes rainbow{
-			0%{background-color: rgb(45,28,176);}
-			14.3%{background-color: rgb(150,28,176);}
-			28.6%{background-color: rgb(176,28,100);}
-			42.9%{background-color: rgb(176,60,28);}
-			57.2%{background-color: rgb(176,164,28);}
-			71.5%{background-color: rgb(82,176,28);}
-			85.8%{background-color: rgb(28,171,176);}
-			100%{background-color: rgb(45,28,176);}
-		}
+        button:hover {
+            background-color: rgb(110, 75, 212);
+        }
+        
+        /* Медиа запросы для мобильной версии */
+        @media screen and (max-width: 768px) { /* Меняем поведение элементов для экрана меньше 768 пикселей */
+            header {
+                flex-direction: column; /* Логотип и навигация располагаются вертикально */
+                align-items: center;
+            }
+            nav ul {
+                flex-direction: column; /* Навигационные пункты расположены друг под другом */
+                margin-top: 1rem;
+            }
+            nav li {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+            h1 {
+                font-size: 2.5rem; /* Уменьшаем размер заголовка */
+            }
+            .title-section img {
+                max-width: 100%; /* Изображение занимает всю ширину экрана */
+            }
+            section {
+                padding: 1rem; /* Уменьшение отступов для экономии пространства */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Прайс Агрегатор — Версия 1.2</h1>
+        <div class="logo-container">
+            <img src="source/parser_header_logo.svg">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://t.me/gvozdkov/"><b>Поддержка</b></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Обновления версии 1.2:</h2>
-            <ul>
-                <li><strong>Свежий интерфейс.</strong> Полностью переработан дизайн интерфейса для удобного просмотра и анализа данных.</li>
-                <li><strong>Повышенная стабильность.</strong> Устранены проблемы с обработкой сложных форматов файлов.</li>
-                <li><strong>Улучшена работа с таблицами.</strong> Теперь кнопка "Очистить" очищает таблицу одним кликом.</li>
-                <li><strong>Добавлена поддержка Модерс Партс.</strong> Modern Parts является одной из ведущих платформ по продаже запчастей, агрегатов, масел и шин для строительной, дорожной, карьерной, горнодобывающей техники, а так же складской техники и оборудования.</li>
-            </ul>
-        </section>
-        <button onclick="window.location.href='https://github.com/NeGvozd/CatalogAggregator/releases/download/stable/SetupInstaller.msi'; return false;">Скачать Установочный Файл</button>
+        <div class="content-bg">
+            <section>
+                <div class="title-section">
+                    <h3>Новое</h3>
+                    <h1>Прайс Агрегатор 1.1</h1>
+                    <p>Инструмент для одновременного просмотра цен нескольких позиций на различных сайтах</p>
+                    <section>
+                        <button onclick="window.location.href='https://github.com/NeGvozd/CatalogAggregator/releases/download/stable/SetupInstaller.msi'; return false;"><p><strong>Попробовать бесплатно</strong></p></button>
+                    </section>
+                    <img src="source/parser_preview.png">
+                </div>
+            </section>
+        </div>
+        <div class="content-card">
+            <section>
+                <h2>Версия 1.1 — что нового:</h2>
+                <ul>
+                    <li><p><strong>Свежий интерфейс.</strong> Полностью переработан дизайн интерфейса для удобного просмотра и анализа данных.</p></li>
+                    <li><p><strong>Повышенная стабильность.</strong> Устранены проблемы с обработкой сложных форматов файлов.</p></li>
+                    <li><p><strong>Улучшена работа с таблицами.</strong> Теперь кнопка "Очистить" очищает таблицу одним кликом.</p></li>
+                    <li><p><strong>Добавлена поддержка Модерн Партс.</strong> Modern Parts является одной из ведущих платформ по продаже запчастей, агрегатов, масел и шин для строительной, дорожной, карьерной, горнодобывающей техники, а так же складской техники и оборудования.</p></li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
         Гвоздков
